@@ -16,3 +16,22 @@ function checkNumber() {
         outputBox.innerText = 'thats too high!';
     }
 }
+
+
+
+
+
+
+//number squared
+
+const numberBox2 = document.getElementById('numberfuntion');
+const outputBox2 = document.getElementById('output2');
+numberBox2.addEventListener('change', checkNumber2);
+
+
+function checkNumber2() {
+    const varriable = numberBox2.value;
+    const newNumber2 = (varriable)**2;
+
+    outputBox2.innerText = newNumber2;
+} 
