@@ -34,16 +34,16 @@ var newNumber2;
 function checkNumber2() {
     const varriable = numberBox2.value;
     console.log(functionsdrop.value)
-    if (functionsdrop.value === "cubed"){
+    if (functionsdrop.value === 'cubed'){
     newNumber2 = (varriable)**3;
     }
-    else if (functionsdrop.value === "2x+7"){
+    else if (functionsdrop.value === '2x+7'){
     newNumber2 = ((varriable)*2)+7;
     }
-    else if (functionsdrop.value === "squared"){
+    else if (functionsdrop.value === 'squared'){
     newNumber2 = (varriable)**2;
     }
-    else if (functionsdrop.value === "Dubbled"){
+    else if (functionsdrop.value === 'Dubbled'){
     newNumber2 = (varriable)*2;
     }
 
