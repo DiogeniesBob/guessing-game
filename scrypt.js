@@ -26,12 +26,26 @@ function checkNumber() {
 
 const numberBox2 = document.getElementById('numberfuntion');
 const outputBox2 = document.getElementById('output2');
+const functionsdrop = document.getElementById('functionsdrop');
 numberBox2.addEventListener('change', checkNumber2);
+var newNumber2;
 
 
 function checkNumber2() {
     const varriable = numberBox2.value;
-    const newNumber2 = (varriable)**2;
+    console.log(functionsdrop.value)
+    if (functionsdrop.value === "cubed"){
+    newNumber2 = (varriable)**3;
+    }
+    else if (functionsdrop.value === "2x+7"){
+    newNumber2 = ((varriable)*2)+7;
+    }
+    else if (functionsdrop.value === "squared"){
+    newNumber2 = (varriable)**2;
+    }
+    else if (functionsdrop.value === "Dubbled"){
+    newNumber2 = (varriable)*2;
+    }
 
     outputBox2.innerText = newNumber2;
 } 
